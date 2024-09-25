@@ -1,0 +1,195 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\css\ab\**" />
+    <Content Remove="wwwroot\css\ab\**" />
+    <EmbeddedResource Remove="wwwroot\css\ab\**" />
+    <None Remove="wwwroot\css\ab\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Rooms\index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\About\assets\imgs\logo.svg" />
+    <None Include="wwwroot\css\About\assets\js\leadmark.js" />
+    <None Include="wwwroot\css\About\assets\scss\abstracts\_animation.scss" />
+    <None Include="wwwroot\css\About\assets\scss\abstracts\_mixins.scss" />
+    <None Include="wwwroot\css\About\assets\scss\abstracts\_variables.scss" />
+    <None Include="wwwroot\css\About\assets\scss\base\_typography.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_alert.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_breadcrumb.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_button.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_code.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_dropdowns.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_form.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_media-object.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_mouse.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_navbar.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_pagination.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_progressbar.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_scrollbar.scss" />
+    <None Include="wwwroot\css\About\assets\scss\components\_table.scss" />
+    <None Include="wwwroot\css\About\assets\scss\layout\_footer.scss" />
+    <None Include="wwwroot\css\About\assets\scss\layout\_header.scss" />
+    <None Include="wwwroot\css\About\assets\scss\layout\_sections.scss" />
+    <None Include="wwwroot\css\About\assets\scss\leadmark.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_alert.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_background-variant.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_badge.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_border-radius.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_buttons.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_caret.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_clearfix.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_deprecate.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_float.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_forms.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_gradients.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_grid.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_hover.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_image.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_list-group.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_lists.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_pagination.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_reset-text.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_resize.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_size.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_table-row.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_text-hide.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_transition.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\mixins\_visibility.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_align.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_background.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_borders.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_clearfix.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_display.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_embed.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_flex.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_float.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_overflow.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_position.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_shadows.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_sizing.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_spacing.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_stretched-link.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_text.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\utilities\_visibility.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\vendor\_rfs.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_alert.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_badge.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_breadcrumb.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_button-group.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_buttons.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_card.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_carousel.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_close.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_code.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_custom-forms.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_dropdown.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_forms.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_functions.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_grid.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_images.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_input-group.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_jumbotron.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_list-group.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_media.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_mixins.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_modal.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_nav.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_navbar.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_pagination.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_popover.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_print.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_progress.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_reboot.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_root.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_spinners.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_tables.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_toasts.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_tooltip.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_transitions.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_type.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_utilities.scss" />
+    <None Include="wwwroot\css\About\assets\scss\vendors\bootstrap-4.3.1\_variables.scss" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.affix.js" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.bundle.js" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.js" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.js.map" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.min.js" />
+    <None Include="wwwroot\css\About\assets\vendors\bootstrap\bootstrap.min.js.map" />
+    <None Include="wwwroot\css\About\assets\vendors\isotope\isotope.pkgd.js" />
+    <None Include="wwwroot\css\About\assets\vendors\isotope\isotope.pkgd.min.js" />
+    <None Include="wwwroot\css\About\assets\vendors\jquery\jquery-3.4.1.js" />
+    <None Include="wwwroot\css\About\assets\vendors\jquery\jquery-3.4.1.min.js" />
+    <None Include="wwwroot\css\About\assets\vendors\jquery\jquery-3.4.1.min.map" />
+    <None Include="wwwroot\css\About\assets\vendors\jquery\jquery-3.4.1.slim.js" />
+    <None Include="wwwroot\css\About\assets\vendors\jquery\jquery-3.4.1.slim.min.js" />
+    <None Include="wwwroot\css\About\assets\vendors\jquery\jquery-3.4.1.slim.min.map" />
+    <None Include="wwwroot\css\About\assets\vendors\themify-icons\fonts\themify.svg" />
+    <None Include="wwwroot\css\Bar\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\css\Bar\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\css\Bar\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\css\Bar\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\css\Bar\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\css\Bar\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\css\Bar\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\css\Home\js\bootstrap.min.js" />
+    <None Include="wwwroot\css\Home\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\css\Home\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\css\Home\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\css\Home\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\css\Home\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\css\Home\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\css\Home\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\css\Hservice\fonts\bootstrap-icons.woff2" />
+    <None Include="wwwroot\css\Hservice\js\.DS_Store" />
+    <None Include="wwwroot\css\Hservice\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\css\Hservice\js\custom.js" />
+    <None Include="wwwroot\css\Hservice\js\jquery.min.js" />
+    <None Include="wwwroot\css\Hservice\js\owl.carousel.min.js" />
+    <None Include="wwwroot\css\user\user\User.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\Contact\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Hotel.Models.RoomServiceU>
+
+<link href="~/css/user/user/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="~/css/user/user/css/bootstrap-icons.css" rel="stylesheet">
+
+<link href="~/css/user/user/css/user.css" rel="stylesheet">
+
+@*@{
+    ViewData["Title"] = "Index";
+}
+*@
+
+@{
+    Layout = null;
+}
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoomPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.checkin)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.checkout)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoomPrice)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.checkin)
+                </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.checkout)
+            </td>
+            <td>
+                
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

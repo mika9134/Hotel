@@ -1,0 +1,64 @@
+﻿@model Hotel.Models.SignInModel;
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="~/css/logincss/index.css">
+</head>
+<body>
+    @*<header>
+        <h2 class="logo">Hotel</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <button href="../Login HTML/index.html" class="btnLogin-popup">Login</button>
+        </nav>
+    </header>*@
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form asp-action="LogIn" method="post" class="buttonResult">
+                <div class="input-box" >
+                    <span class="icon">
+                        <ion-icon name="person-circle"></ion-icon>
+
+                    </span>
+                    <input type="text" asp-for="Username" required>
+                    <label class="tag">Username</label>
+
+
+                </div>
+                <span class="err" asp-validation-for="Username"></span>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input asp-for="Password" type="password" required>
+                    <label class="tag">Password</label>
+                </div>
+                <span class="err" asp-validation-for="Password"></span>
+
+                @if (TempData["msg"] != null)
+                {
+                    <div class="msg">@TempData["msg"]</div>
+                }
+
+
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="/User/SignUp" class="register-link"> Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="~/js/index.js"></script>
+
+        
+</body>

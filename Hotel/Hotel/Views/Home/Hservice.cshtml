@@ -1,0 +1,468 @@
+﻿@{
+    Layout = null;
+}@*
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Hotel.styles.css" asp-append-version="true" />
+
+</head>
+<body style="background-image: url('.../rest.jpg');">
+    <form class="d-flex" role="search">
+        <button asp-controller="Home" asp-action="Spa" class="btn  col-md-4">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-md shadow-danger" style="width: 18rem;">
+                    <img src="~/Image/h5.jpg" width="80" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Room</h5>
+                        <div class="btn-group">
+                            <a class="btn btn-sm btn-outline-secondary">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+
+        <button asp-controller="Home" asp-action="Food" class="btn  col-md-4">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg shadow-danger" style="width: 18rem;">
+                    <img src="~/Image/s3.jpg" width="80" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Food</h5>
+                        <div class="btn-group">
+                            <a class="btn btn-sm btn-outline-secondary">View Detail</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </button>
+
+
+        <button asp-controller="Home" asp-action="Gym" class="btn  col-md-4">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg shadow-danger" style="width: 18rem;">
+                    <img src="~/Image/gm2.jpg" width="80" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gym</h5>
+                        <div class="btn-group">
+                            <a asp-controller="Account" asp-action="SignUp" class="btn btn-sm btn-outline-secondary">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+    </form>
+
+    <form class="d-flex" role="search">*@
+        @*  <button asp-controller="Home" asp-action="Swimming" class="btn  col-md-4">
+        <div class="col-md-4">
+        <div class="card mb-4 shadow-lg shadow-danger" style="width: 18rem;">
+        <img src="~/Image/bg2.jpg" width="80" height="250" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Foods</h5>
+        <div class="btn-group">
+        <a asp-controller="Account" asp-action="SignUp" class="btn btn-sm btn-outline-secondary">View Detail</a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </button>*@
+
+     @*   <button asp-controller="Home" asp-action="Food" class="btn  col-md-4">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg shadow-danger" style="width: 18rem;">
+                    <img src="~/Image/F1.jpg" width="80" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Foods</h5>
+                        <div class="btn-group">
+                            <a class="btn btn-sm btn-outline-secondary">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </button>
+        <button asp-controller="Home" asp-action="Spa" class="btn  col-md-4">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-md shadow-danger" style="width: 18rem;">
+                    <img src="~/Image/s" width="80" height="250" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Swimming Pools</h5>
+                        <div class="btn-group">
+                            <a asp-controller="Account" asp-action="SignUp" class="btn btn-sm btn-outline-secondary">View Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+
+    </form>
+
+
+
+
+
+</body>
+</html>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/bootsrap.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pod Talk - Free Bootstrap 5 CSS Template</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/Hservice/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/css/Hservice/css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="~/css/Hservice/css/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="~/css/Hservice/css/owl.theme.default.min.css">
+
+    <link href="~/css/Hservice/css/templatemo-pod-talk.css" rel="stylesheet">
+
+    <!--
+
+    TemplateMo 584 Pod Talk
+
+    https://templatemo.com/tm-584-pod-talk
+
+    -->
+</head>
+
+<body>
+
+    <main>
+
+
+        <section class="hero-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="text-center mb-5 pb-2">
+                            <h1 class="text-white">List of Our Services</h1>
+
+                            <p class="text-white"></p>
+
+                            <a href="#section_2" class="btn custom-btn smoothscroll mt-3"></a>
+                        </div>
+
+                        <div class="owl-carousel owl-theme">
+                            <div class="owl-carousel-info-wrap item">
+                                <a asp-controller="Home" asp-action="Room">  <img src="~/Image/bed1.jpg" height="300" class="owl-carousel-image img-fluid" alt=""> </a>
+
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">
+                                        Room
+@*                                         <img src="images/verified.png" class="owl-carousel-verified-image img-fluid" alt="" />
+*@                                    </h4>
+
+                                    <span class="badge">Storytelling</span>
+
+                                    <span class="badge">Business</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="owl-carousel-info-wrap item">
+                                <a asp-controller ="Home" asp-action="Gym">  <img src="~/Image/g3.jpg" class="owl-carousel-image img-fluid" alt=""></a>
+
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">
+                                        Gym
+                                        <img src="images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
+                                    </h4>
+
+                                    <span class="badge">Creative</span>
+
+                                    <span class="badge">Design</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="owl-carousel-info-wrap item">
+                                <a asp-controller="Home" asp-action="Swimming" >   <img src="~/css/Hservice/images/sw4.jpg" class="owl-carousel-image img-fluid" alt=""></a>
+
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">Swimming Pool</h4>
+
+                                    <span class="badge">Modeling</span>
+
+                                    <span class="badge">Fashion</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-facebook"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-pinterest"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="owl-carousel-info-wrap item">
+                                <a asp-controller="Home" asp-action="Food">   <img src="~/css/Hservice/images/fod5.jpg" class="owl-carousel-image img-fluid" alt=""></a>
+
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">Foods</h4>
+
+                                    <span class="badge">Acting</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-instagram"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-youtube"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="owl-carousel-info-wrap item">
+                                <a asp-controller ="Home" asp-action="Bar">  <img src="~/Image/bar1.jpg" class="owl-carousel-image img-fluid" alt=""></a>
+
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">
+                                       Bar
+@*                                        <img src="~/css/Hservice/images/verified.png" class="owl-carousel-verified-image img-fluid" alt="">
+*@                                    </h4>
+
+                                    <span class="badge">Influencer</span>
+                                </div>
+
+                                <div class="social-share">
+                                    <ul class="social-icon">
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-instagram"></a>
+                                        </li>
+
+                                        <li class="social-icon-item">
+                                            <a href="#" class="social-icon-link bi-youtube"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="owl-carousel-info-wrap item">
+                                <a asp-controller="Home" asp-action="Spa">  <img src="~/Image/spa1.jpg" class="owl-carousel-image img-fluid" alt=""></a>
+
+                                <div class="owl-carousel-info">
+                                    <h4 class="mb-2">
+                                        Spa
+                                       
+                                    </h4>
+
+                                    <span class="badge">Influencer</span>
+                                </div>
+
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="topics-section section-padding pb-0" id="section_3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">Topics</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block custom-block-overlay">
+                            <a href="detail-page.html" class="custom-block-image-wrap">
+                                <img src="~/css/Hservice/images/topics/physician-consulting-his-patient-clinic.jpg" class="custom-block-image img-fluid" alt="">
+                            </a>
+
+                            <div class="custom-block-info custom-block-overlay-info">
+                                <h5 class="mb-1">
+                                    <a href="listing-page.html">
+                                        Productivity
+                                    </a>
+                                </h5>
+
+                                <p class="badge mb-0">50 Episodes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block custom-block-overlay">
+                            <a href="detail-page.html" class="custom-block-image-wrap">
+                                <img src="~/css/Hservice/images/topics/repairman-doing-air-conditioner-service.jpg" class="custom-block-image img-fluid" alt="">
+                            </a>
+
+                            <div class="custom-block-info custom-block-overlay-info">
+                                <h5 class="mb-1">
+                                    <a href="listing-page.html">
+                                        Technician
+                                    </a>
+                                </h5>
+
+                                <p class="badge mb-0">12 Episodes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block custom-block-overlay">
+                            <a href="detail-page.html" class="custom-block-image-wrap">
+                                <img src="~/css/Hservice/images/topics/woman-practicing-yoga-mat-home.jpg" class="custom-block-image img-fluid" alt="">
+                            </a>
+
+                            <div class="custom-block-info custom-block-overlay-info">
+                                <h5 class="mb-1">
+                                    <a href="listing-page.html">
+                                        Mindfullness
+                                    </a>
+                                </h5>
+
+                                <p class="badge mb-0">35 Episodes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block custom-block-overlay">
+                            <a href="detail-page.html" class="custom-block-image-wrap">
+                                <img src="~/css/Hservice/images/topics/delicious-meal-with-sambal-arrangement.jpg" class="custom-block-image img-fluid" alt="">
+                            </a>
+
+                            <div class="custom-block-info custom-block-overlay-info">
+                                <h5 class="mb-1">
+                                    <a href="listing-page.html">
+                                        Cooking
+                                    </a>
+                                </h5>
+
+                                <p class="badge mb-0">12 Episodes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+
+
+                <div style="float: right;" class="co-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Contact us</h6>
+
+                    <p class="mb-2"><strong class="d-inline me-2">Phone:</strong> +251-911-223-344</p>
+
+                    <p>
+                        <strong class="d-inline me-2">Email:</strong>
+                        <a href="#">ALAHotel@org.com</a>
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row align-items-center">
+
+
+
+
+                <div class="col-lg-3 col-12">
+                    <p class="copyright-text mb-0">
+                        © ALA Hotel
+                        <br><br>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="~/css/Hservice/js/jquery.min.js"></script>
+    <script src="~/css/Hservice/js/bootstrap.bundle.min.js"></script>
+    <script src="~/css/Hservice/js/owl.carousel.min.js"></script>
+    <script src="~/css/Hservice/js/custom.js"></script>
+
+</body>
+</html>
