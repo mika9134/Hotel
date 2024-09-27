@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <title>Five Hotel</title> -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Lobster+Two|Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        
+   
+
+
+
+
+
+
+
+            <div class="st-rec"></div>
+            <div class="rd-rec"></div>
+        </header>
+        
+        <div class="about lobster-font-family">
+            <div class="container">
+                <h2 class="text-center text-capitalize">About our hotel</h2>
+                <img src="imgs/shape.png">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4>A best place to enjoy your life</h4>
+                        <p> Hotel ALA is located in the city centre, in Lisbon’s main business and shopping
+                            district. This renovated 5 stars combines the art and tradition of hospitality with all
+                            the facilities and services of an international unit. 303 Rooms and suites with
+                            panoramic terrace, completely soundproof, comfortably decorated and well
+                            equipped, guarantee a comfortable stay. The Hotel offers 2 Restaurants and 2 bars:
+                            Grill D. Fernando with panoramic view, and the Coffee Shop Rendez-Vous. A
+                            modern Business Centre, equipped with the latest technology, and wireless internet
+                            access in all meeting rooms and public areas. To make your stay even more
+                            enjoyable, the Altis offers a Health Club, heated Swimming pool, Shopping area,
+                            hairdresser, 24 Hours Room Service, Laundry and parking.</p>
+                        <button><a href="#">Read more</a></button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <h2 class="text-capitalize" id="room">rooms & suits</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="img"></div>
+                   </div>
+                <img src="imgs/shape.png">
+                    </div>
+            </div>
+        </div>
+        
+        
+        
+        
+       
+        
+        <div class="slider main-font-family">
+            <h2 class="text-center text-capitalize main-font-family">what our clients say</h2>
+          <div id="slideToNext" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slideToNext" data-slide-to="0" class="active"></li>
+              <li data-target="#slideToNext" data-slide-to="1"></li>
+              <li data-target="#slideToNext" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>jone due</h5>
+                  <p>It is a long established fact that a reader wil
+l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>Meklit</h5>
+                  <p>It is a long established fact that a reader wil
+l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>Michael</h5>
+                  <p>It is a long established fact that a reader wil
+l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+       
+        
+        <footer class="noto-font-family">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                           
+
+
+                        </div> 
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Find us</h3>
+                            <p>HIlcoe School of Technology and Computer Science, Abrihot Library,<br>
+                                Addis Ababa, Ethiopia<br>
+                                (+251) 911767757<br>
+                                (+251) 910788018 <br>
+                                ALAHotel@gmail.com
+                            </p>
+                        </div>
+                      
+
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <div class="copyright noto-font-family">
+            <p>© 2023 All Rights Reserved. Design by <a href="https://html.design/"></a></p>
+        </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+        </script>
+    </body>
+</html>
