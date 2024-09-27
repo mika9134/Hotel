@@ -1,0 +1,28 @@
+﻿@using Hotel.Models;
+
+@{
+    Layout = "_Layout";
+    var plist = ViewData["allr"] as List<Room>;
+}
+
+<h1>@ViewData["title"]</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Room Id</th>
+            <th>Room Image</th>
+            <th>Room Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in plist)
+        {
+            <tr>
+                <td>@p.RoomId</td>
+                <td>@p.RoomImage </td>
+                <td>@p.RoomDescription</td>
+            </tr>
+        }
+    </tbody>
+</table>

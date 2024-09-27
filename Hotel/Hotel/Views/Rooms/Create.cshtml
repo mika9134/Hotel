@@ -1,0 +1,205 @@
+﻿@model Hotel.Models.Room
+
+@{
+    ViewData["Title"] = "Create";
+}
+@{
+    Layout = null;
+}
+
+
+<link href="~/css/user/user/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="~/css/user/user/css/bootstrap-icons.css" rel="stylesheet">
+
+<link href="~/css/user/user/css/user.css" rel="stylesheet">
+
+@*
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Admin</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+                
+        <link href="~/css/Admin/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="~/css/Admin/css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="~/css/Admin/css/admin.css" rel="stylesheet">
+
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-12 col-12 d-flex flex-wrap">
+                            <p class="d-flex me-4 mb-0">
+                                
+                                <strong class="text-dark">Welcome Admin</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+
+            <section class="ticket-section section-padding">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-10 mx-auto">
+                        <form asp-controller="Rooms"  asp-action="Create" class="custom-form ticket-form mb-5 mb-lg-0">
+                                <h2 class="text-center mb-4">Admin</h2>
+
+                                <div class="ticket-form-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <h6>ServiceName</h6>
+                                        <input asp-controller="Rooms" asp-for="" type="text" name="ticket-form-name" id="ticket-form-name" class="form-control" placeholder="ServiceName" required>
+                                            <span asp-controller="Rooms"  asp-validation-for="RoomName" class="text-danger"></span>
+                                        </div>
+                                        <h6>ServiceDescription</h6>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <input asp-for="RoomDescription"  name="ticket-form-email" id="ticket-form-email"  class="form-control" placeholder="ServiceDescription" required>
+                                            <span asp-validation-for="RoomDescription" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <h6>ServiceQuantity</h6>
+                                    <input asp-for="Servicequantity" class="form-control" name="ticket-form-phone" placeholder="Servicequantity">
+                                    <span asp-validation-for="Servicequantity" class="text-danger"></span>
+                                    <h6>ServiceUnitPrice</h6>
+                                    <input asp-for="ServiceunitPrice" type="number" name="ticket-form-number" id="ticket-form-number" class="form-control" placeholder="ServiceunitPrice" required>
+                                    <span asp-validation-for="ServiceunitPrice" class="text-danger"></span>
+                                    <div>
+                                    <h6>ImagePath</h6>
+                                    <input asp-for="imagePath" type="number" name="ticket-form-number" id="ticket-form-number" class="form-control" placeholder="">
+                                    <span asp-validation-for="imagePath" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                        <button value="Create" type="submit" class="form-control">Finish</button>
+                                    </div>
+                                </div>
+                            </form>
+                    </div>
+                </div>
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
+                
+            </section>
+        </main>
+
+
+        <footer class="site-footer">
+           
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-12 mt-5">
+                            <p class="copyright-text">© ALH Hotel</p>
+                        </div>
+
+                        <div class="col-lg-8 col-12 mt-lg-5">
+                            <ul class="site-footer-links">
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                                </li>
+
+                                <li class="site-footer-link-item">
+                                    <a href="#" class="site-footer-link">Privacy</a>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+       
+    </body>
+</html> 
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>*@
+
+
+@*<link href="~/css/Admin/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link href="~/css/Admin/css/bootstrap-icons.css" rel="stylesheet">
+
+<link href="~/css/Admin/css/admin.css" rel="stylesheet">*@
+
+
+
+
+
+
+
+
+<h1>Create</h1>
+
+<h4>Room</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="Create" asp-controller="Rooms">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="RoomDescription" class="control-label"></label>
+                <input asp-for="RoomDescription" class="form-control" />
+                <span asp-validation-for="RoomDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoomPrice" class="control-label"></label>
+                <input asp-for="RoomPrice" class="form-control" />
+                <span asp-validation-for="RoomPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoomImage" class="control-label"></label>
+                <input asp-for="RoomImage" class="form-control" />
+@*                <span asp-validation-for="RoomImage" class="text-danger"></span>
+*@            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
